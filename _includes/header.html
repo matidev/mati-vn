@@ -1,0 +1,16 @@
+<nav class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <a class="sidebar-logo hover-shrink" href="/" title="{{ site.mati.name }}">
+            <span class="name">{{ site.mati.name }}</span>
+            <span class="nickname">{{ site.mati.nickname }}</span>
+        </a>
+
+        <ul class="nav flex-column">
+            {% include navigation.html %}
+        </ul>
+
+        <div class="sidebar-footer">
+            {% include footer.html %}
+        </div>
+    </div>
+</nav>

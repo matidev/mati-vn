@@ -1,0 +1,24 @@
+- title: Email
+  hover: outlook
+  link: mailto:matidev@outlook.com
+  icon: envelope
+
+- title: Skype
+  hover: skype
+  link: skype:mv.tien?chat
+  icon: skype
+
+- title: Twitter
+  hover: twitter
+  link: https://twitter.com/matidev
+  icon: twitter-square
+
+- title: GitHub
+  hover: github
+  link: https://github.com/matidev
+  icon: github
+
+- title: LinkedIn
+  hover: linkedin
+  link: https://linkedin.com/in/matidev
+  icon: linkedin-square

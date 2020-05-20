@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /blog
+title: Mati's Blog
+---
+
+<h1>{{ page.title }}</h1>
+<hr>
+<div class="list-group blog-list mt-4">
+    <div class="row">
+        {% for post in site.posts %}
+        <article class="col-12 col-lg-6 mb-3">
+            <a class="list-group-item list-group-item-action blog-item shadow" data-placement="top"
+               data-toggle="tooltip" href="{{ post.url }}" title="Read {{ post.title }}">
+                <div class="d-flex w-100 justify-content-between">
+                    <h2 class="h4 mb-0">{{ post.title }}</h2>
+                </div>
+                <div class="mt-0">
+                    <small class="text-muted">
+                        <i class="fa fa-clock-o fa-fw"></i> {{ post.date | date: "%B %d, %Y" }}
+                        <i class="fa fa-user-circle fa-fw ml-2"></i> {{ post.author }}
+                    </small>
+                </div>
+                <div class="mt-2 blog-excerpt">{{ post.excerpt }}</div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</div>

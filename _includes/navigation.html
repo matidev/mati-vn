@@ -1,0 +1,24 @@
+{% for item in site.data.navigation %}
+
+{% if page.collection == 'posts' and item.link == '/blog' %}
+{% assign is_post_entry = true %}
+{% else %}
+{% assign is_post_entry = false %}
+{% endif %}
+
+{% if item.oint %}
+{% assign open_in_new_tab = true %}
+{% else %}
+{% assign open_in_new_tab = false %}
+{% endif %}
+
+<li class="nav-item d-block">
+    <a class="nav-link d-inline-block{% if page.url == item.link or is_post_entry %} active{% endif %}"
+       href="{{ item.link }}"{% if open_in_new_tab %} target="_blank" {% endif %}>
+        <i class="fa fa-{{ item.icon }} fa-fw"></i> {{ item.name }}
+        {% if page.url == item.link or is_post_entry %}
+        <span class="sr-only">(current)</span>
+        {% endif %}
+    </a>
+</li>
+{% endfor %}

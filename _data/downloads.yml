@@ -1,0 +1,131 @@
+- name: Windows 10
+  description: Direct downloads from Microsoft Software Download.
+  windows: https://www.microsoft.com/en-us/software-download/windows10ISO/
+  linux:
+  macos:
+
+- name: Ubuntu Desktop 20.04 LTS
+  description: Ubuntu 20.04 is a long-term support (LTS) release.
+  windows:
+  linux: https://www.ubuntu.com/download/desktop
+  macos:
+
+- name: macOS Catalina 10.15
+  description: macOS Catalina gives you more of everything you love about Mac.
+  windows:
+  linux:
+  macos: https://support.apple.com/en_US/downloads/macos
+
+- name: Oracle VM VirtualBox
+  description: Oracle VM VirtualBox allows users to run nearly any operating system on a single machine and to freely switch between OS instances running simultaneously.
+  windows: https://www.virtualbox.org/wiki/Downloads
+  linux: https://www.virtualbox.org/wiki/Linux_Downloads
+  macos: https://www.virtualbox.org/wiki/Downloads
+
+- name: JetBrains
+  description: "JetBrains: Developer Tools for Professionals and Teams"
+  windows: https://www.jetbrains.com/
+  linux: https://www.jetbrains.com/
+  macos: https://www.jetbrains.com/
+
+- name: Sublime Text 3
+  description: Sublime Text is a sophisticated text editor for code, markup and prose.
+  windows: https://www.sublimetext.com/3
+  linux: https://www.sublimetext.com/3
+  macos: https://www.sublimetext.com/3
+
+- name: Notepad++
+  description: Notepad++ is a free source code editor and Notepad replacement that supports several languages.
+  windows: https://notepad-plus-plus.org/download/
+  linux:
+  macos:
+
+- name: Google Chrome
+  description: Get more done with the new Google Chrome. A more simple, secure, and faster web browser than ever, with Google's smarts built-in.
+  windows: https://www.google.com/chrome/
+  linux: https://www.google.com/chrome/
+  macos: https://www.google.com/chrome/
+
+- name: Mozilla Firefox
+  description: Free Web Browser.
+  windows: https://www.mozilla.org/en-US/firefox/all/?q=English%20(US)
+  linux: https://www.mozilla.org/en-US/firefox/all/?q=English%20(US)
+  macos: https://www.mozilla.org/en-US/firefox/all/?q=English%20(US)
+
+- name: Bitvise SSH Client
+  description: Free SSH file transfer, terminal and tunneling.
+  windows: https://www.bitvise.com/ssh-client-download
+  linux:
+  macos:
+
+- name: FileZilla
+  description: The free FTP solution for both client and server.
+  windows: https://filezilla-project.org/download.php?type=client
+  linux: https://filezilla-project.org/download.php?type=client
+  macos: https://filezilla-project.org/download.php?type=client
+
+- name: TeamViewer
+  description: The Remote Desktop software.
+  windows: https://www.teamviewer.com/en/download/windows/
+  linux: https://www.teamviewer.com/en/download/linux/
+  macos: https://www.teamviewer.com/en/download/mac/
+
+- name: UltraViewer
+  description: Remote control software, remote access software.
+  windows: https://ultraviewer.net/en/download.html
+  linux:
+  macos:
+
+- name: Skype
+  description: Communication tool for free calls and chat.
+  windows: https://go.skype.com/windows.desktop.download
+  linux: https://go.skype.com/skypeforlinux-64.deb
+  macos: https://go.skype.com/mac.download
+
+- name: Zalo
+  description: Ứng dụng Zalo PC đã có mặt trên Windows, Mac OS, Web.
+  windows: https://zalo.me/pc
+  linux:
+  macos: https://zalo.me/pc
+
+- name: Viber
+  description: Free and secure calls and messages to anyone, anywhere.
+  windows: https://www.viber.com/download/
+  linux: https://www.viber.com/download/
+  macos: https://www.viber.com/download/
+
+- name: K-Lite Codec Pack
+  description: The K-Lite Codec Pack is a collection of DirectShow filters, VFW/ACM codecs, and tools.
+  windows: https://www.codecguide.com/download_k-lite_codec_pack_full.htm
+  linux:
+  macos:
+
+- name: Rufus
+  description: Create bootable USB drives the easy way.
+  windows: https://rufus.ie/
+  linux:
+  macos:
+
+- name: EaseUS Partition Master Free
+  description: Manage disk space for free.
+  windows: https://www.easeus.com/download/epmf-download.html
+  linux:
+  macos:
+
+- name: WinRAR [Paid Version - Password Required]
+  description: "WinRAR archiver, a powerful tool to process RAR and ZIP files."
+  windows: https://drive.google.com/open?id=1wbsy6BumoMYq3EAOfp7bk6uf3prjtA18
+  linux:
+  macos:
+
+- name: UniKey
+  description: UniKey - Bàn phím tiếng Việt.
+  windows: https://www.unikey.org/download.html
+  linux:
+  macos:
+
+- name: Mati's Fonts Collection
+  description: My collected fonts for Windows.
+  windows: https://drive.google.com/open?id=16V1pUl7ftyd7LC6CHV_R0nN8_py8fVNu
+  linux:
+  macos:

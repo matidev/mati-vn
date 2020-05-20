@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i&display=swap&subset=vietnamese"
+          rel="stylesheet">
+    {% if page.styles %}{% if page.styles.first %}{% for item in page.styles %}
+    <script src="{{ item }}"></script>
+    {% endfor %}{% endif %}{% endif %}
+    <link href="{{ '/assets/css/mati.min.css?v=' | append: site.version | absolute_url }}" rel="stylesheet">
+    {% feed_meta %}
+    {% seo %}
+    <script>
+        const matiAPIBaseUrl = '{{ site.mati.api }}';
+    </script>
+    {% include analytics.html %}
+</head>
+<body>
+{% include header-mobile.html %}
+<div class="container-fluid">
+    <div class="row">
+        {% include header.html %}
+        <main class="main col-md-8 col-lg-9 col-xl-10 ml-sm-auto px-md-4 pt-5 pt-md-4 my-5 mt-md-0">
+            {{ content }}
+
+            <div class="d-none d-md-block">
+                {% include footnote.html %}
+            </div>
+        </main>
+    </div>
+</div>
+
+<footer class="d-block d-md-none border-top pt-3 mt-2 mt-md-5">
+    <div class="container">
+        {% include footer.html %}
+
+        <div class="d-block d-md-none">
+            {% include footnote.html %}
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.bundle.min.js"></script>
+{% if page.scripts %}{% if page.scripts.first %}{% for item in page.scripts %}
+<script src="{{ item }}"></script>
+{% endfor %}{% endif %}{% endif %}
+<script defer src="{{ '/assets/js/mati.min.js?v=' | append: site.version }}"></script>
+<script>
+    NProgress.start();
+    jQuery(document).ready(function () {
+        NProgress.done();
+    });
+</script>
+</body>
+</html>

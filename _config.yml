@@ -1,0 +1,33 @@
+title: "Tien Mai (Mati)"
+email: "matidev@outlook.com"
+description: "Tien Mai (Mati) | mati.vn"
+baseurl: ""
+url: "https://mati.vn"
+permalink: none
+version: 1.2.5
+
+mati:
+  name: Tien Mai
+  nickname: Mati
+  cloud: https://mati.cloud/?utm_source=mati.vn
+  github: https://github.com/matidev
+  api: https://api.mati.cloud/mati/v1/
+  blackbox:
+    url: https://blackbox.mati.cloud/
+    id: 1
+  googleanalytics: UA-86968949-1
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
