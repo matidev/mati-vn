@@ -22,6 +22,12 @@
   linux: https://www.virtualbox.org/wiki/Linux_Downloads
   macos: https://www.virtualbox.org/wiki/Downloads
 
+- name: AdwCleaner
+  description: "AdwCleaner is a free removal tool for: Adware (ads software), PUP/LPI (Potentially Undesirable Program), Toolbars, Hijacker, Spyware..."
+  windows: https://toolslib.net/downloads/viewdownload/1-adwcleaner/
+  linux:
+  macos:
+
 - name: JetBrains
   description: "JetBrains: Developer Tools for Professionals and Teams"
   windows: https://www.jetbrains.com/

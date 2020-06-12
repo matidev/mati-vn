@@ -11,6 +11,10 @@
   link: /downloads
   icon: cloud-download
 
+- name: Âm Lịch
+  link: /am-lich
+  icon: calendar
+
 - name: Useful Tools
   link: /tools
   icon: briefcase

@@ -66,8 +66,8 @@ $ chmod 755 /var/www/domain_com/file
 $ sudo certbot certificates
 
 # Add cert
-$ sudo certbox --nginx -d mati.vn -d www.mati.vn
-$ sudo certbox --apache -d mati.vn -d www.mati.vn
+$ sudo certbot --nginx -d mati.vn -d www.mati.vn
+$ sudo certbot --apache -d mati.vn -d www.mati.vn
 
 # Certbot is automatic renew the cert, but you can test by using this command
 $ sudo certbot renew --dry-run

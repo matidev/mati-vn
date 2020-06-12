@@ -3,7 +3,8 @@ layout: default
 permalink: /tools
 title: Useful Tools
 scripts:
-- https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js
+    - https://unpkg.com/password-generator@2.2.3/dist/password-generator.min.js
 ---
 
 <h1>{{ page.title }}</h1>
@@ -30,6 +31,15 @@ scripts:
             </div>
             <div class="col-12 col-lg-6 mt-2 mt-md-3 mt-lg-0">
                 <div id="tool-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-tools mt-3">
+        <h2 class="h3 text-info">Random Strings</h2>
+        <div class="row">
+            <div class="col-12">
+                <div id="tool-string-result"></div>
             </div>
         </div>
     </section>
