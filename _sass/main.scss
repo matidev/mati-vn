@@ -247,6 +247,14 @@ footer {
     }
   }
 
+  .amlich {
+    input {
+      &.error {
+        border-color: #FF0000;
+      }
+    }
+  }
+
   .tools-block {
     #tool-result {
       font-size: 1rem;
