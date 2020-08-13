@@ -166,6 +166,14 @@ footer {
   }
 }
 
+.title {
+  margin-bottom: 0;
+}
+
+.sub-title {
+  font-size: 1.14rem;
+}
+
 .main {
   font-size: 1.25rem;
 
@@ -356,6 +364,10 @@ footer {
 
 .font-weight-bold {
   font-weight: 500 !important;
+}
+
+.font-size-normal {
+  font-size: 1.14rem;
 }
 
 #nprogress {

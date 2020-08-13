@@ -8,14 +8,14 @@ scripts:
 - assets/js/amlich.min.js
 ---
 
-<h1>{{ page.title }}</h1>
+<h1 class="title">{{ page.title }}</h1>
+<div class="alert alert-success px-2 py-1 mt-2 mb-0 d-lg-inline-block font-size-normal">
+    Hôm nay là <span id="mati-al-today-solar" class="font-weight-bold"></span>,
+    nhằm ngày <span id="mati-al-today-lunar" class="font-weight-bold"></span> Âm Lịch.
+</div>
 <hr>
 <div class="mb-4 small">
-    <div class="alert alert-success">
-        Hôm nay là <span id="mati-al-today-solar" class="font-weight-bold"></span>,
-        nhằm ngày <span id="mati-al-today-lunar" class="font-weight-bold"></span> Âm Lịch.
-    </div>
-    <div class="alert alert-info">
+    <div class="alert alert-info px-2 py-1">
         <p>Các ứng dụng lịch như Apple Calendar (iPhone, iPad...), Google Calendar, Microsoft Tasks... chỉ hỗ trợ ngày
             dương lịch. Công cụ này sẽ hỗ trợ tạo/chuyển đổi lịch âm sang dương, sau đó nhập (import) vào các ứng dụng
             trên.</p>

@@ -14,7 +14,9 @@ $ bundle update
 - Update parameters on `_config.yml` file.
 - Also for `_data` folder.
 - Run Jekyll in local by using this command
-```$ bundle exec jekyll serve```
+```
+$ bundle exec jekyll serve
+```
 - Open browser, enter the url http://localhost:4000/
 
 # Jekyll Documents:
