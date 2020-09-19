@@ -27,6 +27,9 @@ $ git fetch -p
 # or
 $ git fetch --prune
 
+# Remove local branch not in remote
+$ git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+
 # Clear cache in local
 $ git rm -r --cached .
 
@@ -35,6 +38,10 @@ $ git config --global credential.helper 'cache --timeout=360000'
 
 # Force update git repository
 $ git push -u --force origin master
+
+# Create tag
+$ git tag v1.0.0
+$ git push orgin --tags
 ```
 
 ## Clear Bash History

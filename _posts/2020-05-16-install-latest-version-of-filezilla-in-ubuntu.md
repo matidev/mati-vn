@@ -51,4 +51,9 @@ $ make
 $ sudo make install
 ```
 
+5. With the lib installs you might get the following message if it doesn't start or FileZilla may not be starting at all: `filezilla: error while loading shared libraries: libfilezilla.so.9: cannot open shared object file: No such file or directory`. To fix it, simply run:
+```shell
+$ sudo ldconfig 
+```
+
 Now run FileZilla and it should be the newest version.
