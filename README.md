@@ -1,13 +1,20 @@
+# MATI.VN
+```
+$ make
+```
+
+
 # Setup Environment
 ```
-# Install Ruby as the root user
-$ sudo apt-get install ruby-full build-essential zlib1g-dev
-
-# Install Jekyll
-$ gem install jekyll bundler
+# 
+# Install Ruby and Jekyll
+$ make setup
 
 # Update bundle
-$ bundle update
+$ make update
+
+# Run Jekyll in local by using this command
+$ make
 ```
 
 # Dev Notes
@@ -15,7 +22,7 @@ $ bundle update
 - Also for `_data` folder.
 - Run Jekyll in local by using this command
 ```
-$ bundle exec jekyll serve
+$ make
 ```
 - Open browser, enter the url http://localhost:4000/
 
