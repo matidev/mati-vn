@@ -9,7 +9,7 @@ references:
 ---
 I have to upgrade my machine to Ubuntu 20.04 (with PHP 7.4 as default), but my projects are working with PHP 7.2.
 <!--more-->
-So I have to downgrade PHP to version 7.2 and install Memcached extension like the way below.
+So I have to downgrade PHP to version 7.2 and install the Memcached extension like the way below.
 
 ```shell
 # Downgrade PHP 7.4 to 7.2

@@ -25,7 +25,7 @@ $ mysql -u root -p db < backup.sql
 $ git remote prune origin
 $ git fetch -p
 # or
-$ git fetch --prune
+$ git fetch --all && git fetch --prune
 
 # Remove local branch not in remote
 $ git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
@@ -42,6 +42,9 @@ $ git push -u --force origin master
 # Create tag
 $ git tag v1.0.0
 $ git push orgin --tags
+
+# Change commit author of single commit
+$ git commit --amend --reset-author
 ```
 
 ## Clear Bash History
@@ -59,12 +62,30 @@ $ ps -e | grep -e process_name -e adept | grep -v grep
 $ sudo lsof -i -P -n | grep LISTEN
 ```
 
+## Change MAC Address
+```shell
+# Install macchanger
+$ sudo apt install net-tools macchanger
+
+# View all MAC addresses of your device
+$ ip link show
+
+# Select an interface from list above
+$ sudo macchanger -r <interface-name>
+```
+
 ## Site Permission
 ```shell
 $ chown -R www-data:www-data /var/www/domain_com
 $ find /var/www/domain_com -type f -exec chmod 644 {} \;
 $ find /var/www/domain_com -type d -exec chmod 755 {} \;
 $ chmod 755 /var/www/domain_com/file
+```
+
+## SSH
+```shell
+# Add SSH private key to the ssh-agent
+$ ssh-add ~/.ssh/<private_key_file>
 ```
 
 ## Certbot (Let's Encrypt)
@@ -100,4 +121,10 @@ $ sudo systemctl start openvpn@user
 
 # Stop OpenVPN
 $ sudo systemctl stop openvpn@user
+
+# Or using on Network Manager
+$ sudo apt install network-manager-openvpn-gnome openvpn-systemd-resolved
+# - Open Network Manager
+# - Click on the VPN + symbol
+# - From the Add VPN window, click on the "Import from file…" option
 ```

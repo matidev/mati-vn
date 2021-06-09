@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 references: 
     - link: https://gist.github.com/emmabostian/ed933bc7f9711acdc565f42f1b159407
 ---
-Seven different types of CSS attribute selectors
+7 different types of CSS attribute selectors.
 <!--more-->
 
 ```css

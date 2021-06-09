@@ -4,17 +4,11 @@
   linux:
   macos:
 
-- name: Ubuntu Desktop 20.04 LTS
-  description: Ubuntu 20.04 is a long-term support (LTS) release.
+- name: Ubuntu Desktop
+  description: Download the latest LTS version of Ubuntu, for desktop PCs and laptops.
   windows:
   linux: https://www.ubuntu.com/download/desktop
   macos:
-
-- name: macOS Catalina 10.15
-  description: macOS Catalina gives you more of everything you love about Mac.
-  windows:
-  linux:
-  macos: https://support.apple.com/en_US/downloads/macos
 
 - name: Oracle VM VirtualBox
   description: Oracle VM VirtualBox allows users to run nearly any operating system on a single machine and to freely switch between OS instances running simultaneously.
@@ -74,7 +68,7 @@
   description: The free FTP solution for both client and server.
   windows: https://filezilla-project.org/download.php?type=client
   linux: https://filezilla-project.org/download.php?type=client
-  macos: https://filezilla-project.org/download.php?type=client
+  macos: https://filezilla-project.org/download.php?platform=osx
 
 - name: TeamViewer
   description: The Remote Desktop software.
@@ -100,11 +94,11 @@
   linux:
   macos: https://zalo.me/pc
 
-- name: Viber
-  description: Free and secure calls and messages to anyone, anywhere.
-  windows: https://www.viber.com/download/
-  linux: https://www.viber.com/download/
-  macos: https://www.viber.com/download/
+- name: Telegram
+  description: Telegram - a new era of messaging.
+  windows: https://desktop.telegram.org/
+  linux: https://desktop.telegram.org/
+  macos: https://macos.telegram.org/
 
 - name: K-Lite Codec Pack
   description: The K-Lite Codec Pack is a collection of DirectShow filters, VFW/ACM codecs, and tools.

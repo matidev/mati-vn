@@ -4,14 +4,14 @@ description: "Tien Mai (Mati) | mati.vn"
 baseurl: ""
 url: "https://mati.vn"
 permalink: none
-version: 1.3.3
+version: 1.4.0
 
 mati:
   name: Tien Mai
   nickname: Mati
   cloud: https://mati.cloud/?utm_source=mati.vn
   github: https://github.com/matidev
-  api: https://api.mati.cloud/mati/v1/
+  api: https://api.mati.cloud/v1/pub/
   blackbox:
     url: https://blackbox.mati.cloud/
     id: 1

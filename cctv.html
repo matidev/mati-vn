@@ -5,8 +5,8 @@ title: CCTV/Camera Support
 ---
 
 <h1 class="title">CCTV/Camera Supports</h1>
-<p class="sub-title">Get detail of IP Address/Domain and check if a port is open or closed. Powered by MatiCloud
-    API.</p>
+<p class="sub-title">Get the detail of the IP Address/Domain and check if a port is open or closed.
+    Powered by MatiCloud API.</p>
 <hr>
 <div class="cctv-block mt-4">
     <div class="row">
@@ -30,10 +30,10 @@ title: CCTV/Camera Support
                     </div>
                 </div>
                 <div class="form-group mb-2">
-                    <div class="form-check hikvision-only-wrapper">
-                        <input class="form-check-input" type="checkbox" id="hikvision-only" checked>
-                        <label class="form-check-label" for="hikvision-only">
-                            Check HikVision ports only.
+                    <div class="form-check more-ports-wrapper">
+                        <input class="form-check-input" type="checkbox" id="more-ports" checked>
+                        <label class="form-check-label" for="more-ports">
+                            Check more popular ports.
                         </label>
                     </div>
                 </div>
@@ -45,37 +45,39 @@ title: CCTV/Camera Support
                 <input id="ip-addr" type="hidden" value="">
             </form>
             <ul class="list-group result-ip mt-2 mt-md-3 shadow"></ul>
+            <div class="mt-5">
+                <h2 class="h5">Links</h2>
+                <ul>
+                    <li>
+                        <a href="https://tools.hikvision.com/calculatorTool/index.html?utm_source=mati.vn#/"
+                           target="_blank">
+                            HikVision Storage and Network Calculator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.hikvision.com/en/support/download/software/?utm_source=mati.vn"
+                           target="_blank">
+                            Download HikVision Software
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://whatismyipaddress.com/?utm_source=mati.vn" target="_blank">
+                            WhatIsMyIPAddress?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://canyouseeme.org/?utm_source=mati.vn" target="_blank">
+                            Open Port Check Tool
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="col-12 col-lg-6 mt-2 mt-md-3 mt-lg-0">
             <ul class="list-group result-list shadow"></ul>
         </div>
     </div>
     <div class="row">
-        <div class="col-12 mt-5">
-            <h2 class="h5">Links</h2>
-            <ul>
-                <li>
-                    <a href="https://tools.hikvision.com/calculatorTool/index.html?utm_source=mati.vn" target="_blank">
-                        HikVision Storage and Network Calculator
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.hikvision.com/en/support/download/software/?utm_source=mati.vn"
-                       target="_blank">
-                        Download HikVision Software
-                    </a>
-                </li>
-                <li>
-                    <a href="https://whatismyipaddress.com/?utm_source=mati.vn" target="_blank">
-                        WhatIsMyIPAddress?
-                    </a>
-                </li>
-                <li>
-                    <a href="https://canyouseeme.org/?utm_source=mati.vn" target="_blank">
-                        Open Port Check Tool
-                    </a>
-                </li>
-            </ul>
-        </div>
+
     </div>
 </div>

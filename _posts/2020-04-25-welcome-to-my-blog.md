@@ -11,6 +11,6 @@ references:
 This is the first post of Mati's Blog.
 <!--more-->
 
-Actually, this is a place for the useful code snippets, commands and work around for the issues that I have. 
+Actually, this is a place for useful code snippets, commands, and workaround for the issues that I have.
 
 Hope this helps and happy coding :heart_eyes:!

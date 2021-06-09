@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "mati-vn"
-  spec.version = "0.1.0"
+  spec.version = "0.1.1"
   spec.authors = ["Tien Mai"]
   spec.email = ["matidev@outlook.com"]
 
@@ -14,10 +14,11 @@ Gem::Specification.new do |spec|
     f.match(%r{^(_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
-  spec.add_runtime_dependency "jekyll", "~> 3.8.5"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.13.0"
+  spec.add_runtime_dependency "jekyll", "~> 3.9.0"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.15.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7.1"
   spec.add_runtime_dependency "jemoji", "~> 0.12.0"
+  spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.1.0"
   spec.add_development_dependency "bundler", "~> 2.1"
 end

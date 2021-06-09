@@ -7,8 +7,9 @@ author: mati
 excerpt_separator: <!--more-->
 references:
 ---
-Some useful commands for set up the Python 3 environment.
+Some useful commands for setting up the Python 3 environment.
 <!--more-->
+
 ```shell
 $ python3 -v
 $ sudo apt install build-essential libssl-dev libffi-dev python3-dev
