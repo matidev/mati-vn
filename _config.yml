@@ -4,7 +4,7 @@ description: "Tien Mai (Mati) | mati.vn"
 baseurl: ""
 url: "https://mati.vn"
 permalink: none
-version: 1.4.0
+version: 1.4.2
 
 mati:
   name: Tien Mai
