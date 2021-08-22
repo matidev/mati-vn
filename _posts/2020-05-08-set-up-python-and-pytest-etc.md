@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title:  "Setup Python, Pytest, etc..."
 date:   2020-05-08 02:05:00 +0700
 categories: article

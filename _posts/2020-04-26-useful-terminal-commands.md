@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Useful Terminal Commands"
-date:   2020-04-26 02:05:00 +0700
+date:   2021-08-22 02:05:00 +0700
 categories: article
 author: mati
 excerpt_separator: <!--more-->

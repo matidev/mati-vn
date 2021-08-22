@@ -34,15 +34,15 @@
   linux: https://www.jetbrains.com/
   macos: https://www.jetbrains.com/
 
-- name: Sublime Text 3
+- name: Sublime Text
   description: Sublime Text is a sophisticated text editor for code, markup and prose.
-  windows: https://www.sublimetext.com/3
-  linux: https://www.sublimetext.com/3
-  macos: https://www.sublimetext.com/3
+  windows: https://www.sublimetext.com/download
+  linux: https://www.sublimetext.com/download
+  macos: https://www.sublimetext.com/download
 
 - name: Notepad++
   description: Notepad++ is a free source code editor and Notepad replacement that supports several languages.
-  windows: https://notepad-plus-plus.org/download/
+  windows: https://notepad-plus-plus.org/downloads/
   linux:
   macos:
 
@@ -114,7 +114,7 @@
 
 - name: EaseUS Partition Master Free
   description: Manage disk space for free.
-  windows: https://www.easeus.com/download/epmf-download.html
+  windows: https://download2.easeus.com/epm_setup.php?product=epm_free&tid=B&id=292
   linux:
   macos:
 
