@@ -10,6 +10,12 @@
   linux: https://www.ubuntu.com/download/desktop
   macos:
 
+- name: Ubuntu Releases (Download from Vietnam Server)
+  description: Official CD Mirrors for Ubuntu. See the list of mirror https://launchpad.net/ubuntu/+cdmirrors
+  windows:
+  linux: https://mirror.bizflycloud.vn/ubuntu-releases/
+  macos:
+
 - name: Oracle VM VirtualBox
   description: Oracle VM VirtualBox allows users to run nearly any operating system on a single machine and to freely switch between OS instances running simultaneously.
   windows: https://www.virtualbox.org/wiki/Downloads

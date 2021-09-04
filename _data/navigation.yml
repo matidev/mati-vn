@@ -1,8 +1,3 @@
-- name: Mati's Cloud
-  link: https://mati.cloud/?utm_source=mati-vn-nav
-  icon: cloud
-  oint: 1
-
 - name: Mati's Blog
   link: /blog
   icon: book
@@ -22,3 +17,8 @@
 - name: CCTV Support
   link: /cctv
   icon: shield
+
+- name: Mati's Cloud
+  link: https://mati.cloud/?utm_source=mati-vn-nav
+  icon: cloud
+  oint: 1
