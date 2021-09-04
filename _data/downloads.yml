@@ -11,7 +11,7 @@
   macos:
 
 - name: Ubuntu Releases (Download from Vietnam Server)
-  description: Official CD Mirrors for Ubuntu. See the list of mirror https://launchpad.net/ubuntu/+cdmirrors
+  description: Official CD Mirrors for Ubuntu. See the list of mirrors https://launchpad.net/ubuntu/+cdmirrors
   windows:
   linux: https://mirror.bizflycloud.vn/ubuntu-releases/
   macos:
@@ -29,7 +29,7 @@
   macos:
 
 - name: AdwCleaner
-  description: "AdwCleaner is a free removal tool for: Adware (ads software), PUP/LPI (Potentially Undesirable Program), Toolbars, Hijacker, Spyware..."
+  description: "AdwCleaner is a free removal tool for Adware (ads software), PUP/LPI (Potentially Undesirable Program), Toolbars, Hijacker, Spyware..."
   windows: https://toolslib.net/downloads/viewdownload/1-adwcleaner/
   linux:
   macos:
@@ -41,7 +41,7 @@
   macos: https://www.jetbrains.com/
 
 - name: Sublime Text
-  description: Sublime Text is a sophisticated text editor for code, markup and prose.
+  description: Sublime Text is a sophisticated text editor for code, markup, and prose.
   windows: https://www.sublimetext.com/download
   linux: https://www.sublimetext.com/download
   macos: https://www.sublimetext.com/download
@@ -65,7 +65,7 @@
   macos: https://www.mozilla.org/en-US/firefox/all/?q=English%20(US)
 
 - name: Bitvise SSH Client
-  description: Free SSH file transfer, terminal and tunneling.
+  description: Free SSH file transfer, terminal, and tunneling.
   windows: https://www.bitvise.com/ssh-client-download
   linux:
   macos:

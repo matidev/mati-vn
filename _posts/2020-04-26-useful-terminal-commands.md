@@ -7,7 +7,7 @@ author: mati
 excerpt_separator: <!--more-->
 references:
 ---
-There are some useful Terminal commands that I used to my machines :sunglasses:.
+There are some useful Terminal commands that I used for my machines :sunglasses:.
 <!--more-->
 
 ## Database
@@ -43,7 +43,7 @@ $ git push -u --force origin master
 $ git tag v1.0.0
 $ git push orgin --tags
 
-# Change commit author of single commit
+# Change commit author of a single commit
 $ git commit --amend --reset-author
 ```
 
@@ -57,7 +57,7 @@ $ cat /dev/null > ~/.bash_history && history -c && exit
 $ ps -e | grep -e process_name -e adept | grep -v grep
 ```
 
-## View Listen Ports
+## View LISTEN ports
 ```shell
 $ sudo lsof -i -P -n | grep LISTEN
 ```
@@ -97,7 +97,7 @@ $ sudo certbot certificates
 $ sudo certbot --nginx -d mati.vn -d www.mati.vn
 $ sudo certbot --apache -d mati.vn -d www.mati.vn
 
-# Certbot is automatic renew the cert, but you can test by using this command
+# Certbot is automatically renewing the cert, but you can test by using this command
 $ sudo certbot renew --dry-run
 
 # Delete site
