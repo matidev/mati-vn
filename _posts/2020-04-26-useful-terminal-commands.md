@@ -17,6 +17,11 @@ $ mysqldump -u root -p mydb | gzip > mydb.sql.gz
 
 # Restore Database
 $ mysql -u root -p db < backup.sql 
+
+# Create user with native password and grant all privileges
+$ CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'Password_here';
+$ GRANT ALL PRIVILEGES ON *.* TO 'user_name'@'localhost' WITH GRANT OPTION;
+$ FLUSH PRIVILEGES;
 ```
 
 ## Git
@@ -45,6 +50,9 @@ $ git push orgin --tags
 
 # Change commit author of a single commit
 $ git commit --amend --reset-author
+
+# Undo commit not push yet
+$ git reset --hard HEAD~1
 ```
 
 ## Clear Bash History
@@ -76,13 +84,32 @@ $ sudo macchanger -r <interface-name>
 
 ## Site Permission
 ```shell
-$ chown -R www-data:www-data /var/www/domain_com
-$ find /var/www/domain_com -type f -exec chmod 644 {} \;
-$ find /var/www/domain_com -type d -exec chmod 755 {} \;
+# Create user
+$ adduser --system --no-create-home --shell /bin/false --disabled-login user_name
+$ usermod -aG www-data user_name
+
+$ chown -R user_name /var/www/domain_com
 $ chmod 755 /var/www/domain_com/file
+
+# Change permission to upload directory
+$ chmod -R 774 /var/www/domain_com/upload_dir
+
+# Change file permissions rw-r--r--
+$ find /var/www/domain_com -type f -exec chmod 644 {} \;
+
+# Change directory permissions rwxr-xr-x
+$ find /var/www/domain_com -type d -exec chmod 755 {} \;
 ```
 
-## SSH
+## Create SSH Key for Server
+```shell
+$ ssh-keygen -t rsa -f ~/.ssh/domain_com -C username
+# Copy the content of domain_com.pub to SSL provider
+# Or copy to server by
+$ ssh-copy-id -p 22 root@server_ip
+```
+
+## SSH Agent
 ```shell
 # Add SSH private key to the ssh-agent
 $ ssh-add ~/.ssh/<private_key_file>
@@ -102,6 +129,10 @@ $ sudo certbot renew --dry-run
 
 # Delete site
 $ sudo certbot delete --cert-name example.com
+
+# Apply SSH for wildcard
+$ sudo certbot certonly --agree-tos --email mati@example.com --manual --preferred-challenges=dns \
+--server https://acme-v02.api.letsencrypt.org/directory -d mati.vn -d *.mati.vn
 ```
 
 ## OpenVPN
@@ -127,4 +158,26 @@ $ sudo apt install network-manager-openvpn-gnome openvpn-systemd-resolved
 # - Open Network Manager
 # - Click on the VPN + symbol
 # - From the Add VPN window, click on the "Import from file…" option
+```
+
+## Docker SSH
+```shell
+$ docker exec -i -t docker-name /bin/bash
+```
+
+## Ubuntu KeyServer
+```shell
+# Refresh all
+$ sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
+
+# Update for single
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv KEY_CODE
+```
+
+## htpasswd
+```shell
+$ htpasswd -c .htpasswd user_one
+
+# Add more user to .htpasswd
+$ htpasswd .htpasswd user_two
 ```
