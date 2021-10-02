@@ -16,6 +16,12 @@
   linux: https://mirror.bizflycloud.vn/ubuntu-releases/
   macos:
 
+- name: Apple macOS
+  description: Download macOS from Apple Support
+  windows:
+  linux:
+  macos: https://support.apple.com/downloads/macos
+
 - name: Oracle VM VirtualBox
   description: Oracle VM VirtualBox allows users to run nearly any operating system on a single machine and to freely switch between OS instances running simultaneously.
   windows: https://www.virtualbox.org/wiki/Downloads
@@ -30,7 +36,7 @@
 
 - name: AdwCleaner
   description: "AdwCleaner is a free removal tool for Adware (ads software), PUP/LPI (Potentially Undesirable Program), Toolbars, Hijacker, Spyware..."
-  windows: https://toolslib.net/downloads/viewdownload/1-adwcleaner/
+  windows: https://toolslib.net/downloads/finish/1-adwcleaner/
   linux:
   macos:
 
@@ -57,12 +63,6 @@
   windows: https://www.google.com/chrome/
   linux: https://www.google.com/chrome/
   macos: https://www.google.com/chrome/
-
-- name: Mozilla Firefox
-  description: Free Web Browser.
-  windows: https://www.mozilla.org/en-US/firefox/all/?q=English%20(US)
-  linux: https://www.mozilla.org/en-US/firefox/all/?q=English%20(US)
-  macos: https://www.mozilla.org/en-US/firefox/all/?q=English%20(US)
 
 - name: Bitvise SSH Client
   description: Free SSH file transfer, terminal, and tunneling.
@@ -97,7 +97,7 @@
 - name: Zalo
   description: Ứng dụng Zalo PC đã có mặt trên Windows, Mac OS, Web.
   windows: https://zalo.me/pc
-  linux:
+  linux: https://zalo.me/zalo-chat
   macos: https://zalo.me/pc
 
 - name: Telegram
@@ -126,7 +126,7 @@
 
 - name: WinRAR [Paid Version - Password Required]
   description: "WinRAR archiver, a powerful tool to process RAR and ZIP files."
-  windows: https://drive.google.com/open?id=1wbsy6BumoMYq3EAOfp7bk6uf3prjtA18
+  windows: https://drive.google.com/uc?id=1Vr8y7wVNRHF_6PaFq4WQFwsOFuAP7r5z&export=download
   linux:
   macos:
 
