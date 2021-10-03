@@ -88,6 +88,12 @@
   linux:
   macos:
 
+- name: Ferdi
+  description: Ferdi is a messaging browser that allows you to combine your favourite messaging services into one application.
+  windows: https://getferdi.com/download/
+  linux: https://getferdi.com/download/
+  macos: https://getferdi.com/download/
+
 - name: Skype
   description: Communication tool for free calls and chat.
   windows: https://go.skype.com/windows.desktop.download
