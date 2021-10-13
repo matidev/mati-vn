@@ -132,7 +132,7 @@
 
 - name: WinRAR [Paid Version - Password Required]
   description: "WinRAR archiver, a powerful tool to process RAR and ZIP files."
-  windows: https://drive.google.com/uc?id=1Vr8y7wVNRHF_6PaFq4WQFwsOFuAP7r5z&export=download
+  windows: https://drive.google.com/uc?id=15qRuOdtq1UXZcuP1LOifGxBEwNQ6-_YR&export=download
   linux:
   macos:
 
@@ -144,6 +144,6 @@
 
 - name: Mati's Fonts Collection
   description: My collected fonts for Windows.
-  windows: https://drive.google.com/open?id=16V1pUl7ftyd7LC6CHV_R0nN8_py8fVNu
+  windows: https://drive.google.com/uc?export=download&confirm=mWEx&id=10UeUDQY484kNkukUWeNGM4YlowI2biZp
   linux:
   macos:
