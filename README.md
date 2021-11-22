@@ -14,6 +14,12 @@ $ make setup
 # Update bundle
 $ make update
 
+# Update PAC
+$ make proxy-update
+
+# Update JS dependencies
+$ make js-update
+
 # Run Jekyll in local by using this command
 $ make
 ```
