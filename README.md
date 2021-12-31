@@ -41,6 +41,6 @@ $ make
 - [Step by Step](https://jekyllrb.com/docs/step-by-step/01-setup/)
 - [Jekyll Documents](https://jekyllrb.com/docs/)
 
-# GitHub Pages Dependencies
+# GitHub Pages
 
-[https://pages.github.com/versions/](https://pages.github.com/versions/)
+- [Dependency versions](https://pages.github.com/versions/)

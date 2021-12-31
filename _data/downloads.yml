@@ -124,9 +124,9 @@
   linux:
   macos:
 
-- name: EaseUS Partition Master Free
+- name: EaseUS Partition Master Free 14
   description: Manage disk space for free.
-  windows: https://download2.easeus.com/epm_setup.php?product=epm_free&tid=B&id=292
+  windows: https://download3.easeus.com/free/epm.exe
   linux:
   macos:
 
