@@ -16,7 +16,10 @@ There are some useful Terminal commands that I used for my machines :sunglasses:
 $ mysqldump -u root -p mydb | gzip > mydb.sql.gz
 
 # Restore Database
-$ mysql -u root -p db < backup.sql 
+$ mysql -u root -p db < backup.sql
+
+# Search and Replace the MySQL Collation
+$ sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_unicode_ci/g' db_file
 
 # Create user with native password and grant all privileges
 $ CREATE USER 'user_name'@'localhost' IDENTIFIED BY 'Password_here';
@@ -126,6 +129,8 @@ $ sudo certbot --apache -d mati.vn -d www.mati.vn
 
 # Certbot is automatically renewing the cert, but you can test by using this command
 $ sudo certbot renew --dry-run
+# or force renewal
+$ sudo certbot renew --force-renewal
 
 # Delete site
 $ sudo certbot delete --cert-name example.com
