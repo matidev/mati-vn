@@ -7,7 +7,13 @@ ruby:
 	sudo apt-get install ruby-full build-essential zlib1g-dev
 
 jekyll:
-	gem install jekyll bundler
+	gem install jekyll -v 3.9.2
+	gem install bundler -v 2.1
+	gem install kramdown-parser-gfm -v 1.1.0
+	gem install jekyll-feed -v 0.15.1
+	gem install jekyll-sitemap -v 1.4.0
+	gem install jekyll-seo-tag -v 2.8.0
+	gem install jemoji -v 0.12.0
 
 update:
 	bundle update
