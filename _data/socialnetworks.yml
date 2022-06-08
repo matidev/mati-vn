@@ -8,10 +8,10 @@
   link: mailto:matidev@outlook.com
   icon: at
 
-- title: Skype
-  hover: skype
-  link: skype:mv.tien?chat
-  icon: skype
+#- title: Skype
+#  hover: skype
+#  link: skype:mv.tien?chat
+#  icon: skype
 
 - title: Telegram
   hover: telegram
