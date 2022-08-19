@@ -9,7 +9,7 @@ title: Downloads
 <hr>
 <div class="alert alert-info shadow box-with-icon mt-4" role="alert">
     <div class="box-icon">
-        <i class="fa fa-exclamation-triangle text-danger"></i>
+        <i class="fa-solid fa-circle-exclamation text-danger"></i>
     </div>
     <div class="box-content font-size-normal">
         Disclaimer: Any links to third-party software available on this website are provided "as is" without warranty
@@ -22,13 +22,13 @@ title: Downloads
         <tr class="text-center">
             <th class="bg-secondary text-white align-middle" scope="col">Name</th>
             <th class="bg-secondary text-white align-middle" scope="col">
-                <i class="fa fa-windows fa-lg"></i> <span class="d-none d-sm-block">Windows</span>
+                <i class="fa-brands fa-lg fa-windows"></i> <span class="d-none d-sm-block">Windows</span>
             </th>
             <th class="bg-secondary text-white align-middle" scope="col">
-                <i class="fa fa-linux fa-lg"></i> <span class="d-none d-sm-block">Linux</span>
+                <i class="fa-brands fa-lg fa-linux"></i> <span class="d-none d-sm-block">Linux</span>
             </th>
             <th class="bg-secondary text-white align-middle" scope="col">
-                <i class="fa fa-apple fa-lg"></i> <span class="d-none d-sm-block">macOS</span>
+                <i class="fa-brands fa-lg fa-apple"></i> <span class="d-none d-sm-block">macOS</span>
             </th>
         </tr>
         </thead>
@@ -45,7 +45,7 @@ title: Downloads
                 {% if item.windows %}
                 <a data-placement="top" data-toggle="tooltip" href="{{ item.windows }}"
                    target="_blank" title="Redirect to download page for Windows">
-                    <i class="fa fa-external-link fa-fw"></i>
+                    <i class="fa-solid fa-fw fa-up-right-from-square"></i>
                 </a>
                 {% endif %}
             </td>
@@ -53,7 +53,7 @@ title: Downloads
                 {% if item.linux %}
                 <a data-placement="top" data-toggle="tooltip" href="{{ item.linux }}"
                    target="_blank" title="Redirect to download page for Linux">
-                    <i class="fa fa-external-link fa-fw"></i>
+                    <i class="fa-solid fa-fw fa-up-right-from-square"></i>
                 </a>
                 {% endif %}
             </td>
@@ -61,7 +61,7 @@ title: Downloads
                 {% if item.macos %}
                 <a data-placement="top" data-toggle="tooltip" href="{{ item.macos }}"
                    target="_blank" title="Redirect to download page for MacOS">
-                    <i class="fa fa-external-link fa-fw"></i>
+                    <i class="fa-solid fa-fw fa-up-right-from-square"></i>
                 </a>
                 {% endif %}
             </td>

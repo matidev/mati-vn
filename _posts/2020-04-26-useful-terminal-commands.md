@@ -7,7 +7,7 @@ author: mati
 excerpt_separator: <!--more-->
 references:
 ---
-There are some useful Terminal commands that I used for my machines :sunglasses:.
+There are some useful Terminal commands that I used for my machines <i class="fa-solid fa-face-grin-squint"></i>.
 <!--more-->
 
 ## Database

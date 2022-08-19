@@ -1,12 +1,12 @@
 - title: GitHub
   hover: github
   link: https://github.com/matidev
-  icon: github
+  icon: fa-brands fa-fw fa-github
 
 - title: Email
   hover: outlook
   link: mailto:matidev@outlook.com
-  icon: at
+  icon: fa-solid fa-fw fa-at
 
 #- title: Skype
 #  hover: skype
@@ -16,14 +16,14 @@
 - title: Telegram
   hover: telegram
   link: https://t.me/matidev
-  icon: telegram
+  icon: fa-brands fa-fw fa-telegram
 
 - title: Twitter
   hover: twitter
   link: https://twitter.com/matidev
-  icon: twitter-square
+  icon: fa-brands fa-fw fa-twitter
 
 - title: LinkedIn
   hover: linkedin
   link: https://linkedin.com/in/matidev
-  icon: linkedin-square
+  icon: fa-brands fa-fw fa-linkedin

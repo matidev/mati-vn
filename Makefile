@@ -13,7 +13,6 @@ jekyll:
 	gem install jekyll-feed -v 0.15.1
 	gem install jekyll-sitemap -v 1.4.0
 	gem install jekyll-seo-tag -v 2.8.0
-	gem install jemoji -v 0.12.0
 
 update:
 	bundle update

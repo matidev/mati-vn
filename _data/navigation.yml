@@ -1,24 +1,24 @@
 - name: Mati's Blog
   link: /blog
-  icon: book
+  icon: fa-solid fa-fw fa-book-open-reader
 
 - name: Downloads
   link: /downloads
-  icon: cloud-download
+  icon: fa-solid fa-fw fa-cloud-arrow-down
 
 - name: Âm Lịch
   link: /am-lich
-  icon: calendar
+  icon: fa-solid fa-fw fa-calendar-days
 
 - name: Useful Tools
   link: /tools
-  icon: briefcase
+  icon: fa-solid fa-fw fa-screwdriver-wrench
 
 - name: CCTV Support
   link: /cctv
-  icon: shield
+  icon: fa-solid fa-fw fa-shield-dog
 
 - name: Mati's Cloud
   link: https://mati.cloud/?utm_source=mati-vn-nav
-  icon: cloud
+  icon: fa-solid fa-fw fa-cloud
   oint: 1
