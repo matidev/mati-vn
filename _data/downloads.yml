@@ -34,6 +34,12 @@
   linux:
   macos:
 
+- name: Ultimate Windows Tweaker 5
+  description: "Ultimate Windows Tweaker 5 for Windows 11. Visit <a href='https://www.thewindowsclub.com/ultimate-windows-tweaker-5-for-windows-11'>TheWindowsClub</a> for further detail."
+  windows: https://www.thewindowsclub.com/downloads/UWT5.zip
+  linux:
+  macos:
+
 - name: AdwCleaner
   description: "AdwCleaner is a free removal tool for Adware (ads software), PUP/LPI (Potentially Undesirable Program), Toolbars, Hijacker, Spyware..."
   windows: https://toolslib.net/downloads/finish/1-adwcleaner/
