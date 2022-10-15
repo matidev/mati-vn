@@ -14,9 +14,6 @@ $ make setup
 # Update bundle
 $ make update
 
-# Update PAC
-$ make proxy-update
-
 # Update JS dependencies
 $ make js-update
 
