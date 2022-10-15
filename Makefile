@@ -1,6 +1,6 @@
 MAKEFLAGS = --silent --ignore-errors --no-print-directory
 
-all: proxy-update js-update build
+all: js-update build
 setup: ruby jekyll
 
 ruby:
