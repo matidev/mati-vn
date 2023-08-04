@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tien Mai | Mati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            background: #f5f6f7;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            color: #0073b1;
+        }
+
+        main {
+            position: relative;
+            height: 96vh;
+            text-align: center;
+        }
+
+        .mati-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        .profile-img {
+            height: 14em;
+            border-radius: 50%;
+            border-top: 3px solid #b10079;
+            border-left: 3px solid #0073b1;
+            border-bottom: 3px solid #0073b1;
+            border-right: 3px solid #b10079;
+        }
+
+        .about {
+            margin-top: 1.39em;
+        }
+
+        .about h1 {
+            margin-bottom: 0.68em;
+            font-weight: 400;
+            font-size: 3em;
+        }
+
+        .about h1 span {
+            opacity: 0.79;
+        }
+
+        .about h2 {
+            margin-bottom: 0.5em;
+            font-weight: 300;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        .about h3 {
+            font-weight: 300;
+            font-size: 1.39em;
+        }
+
+        .links {
+            margin-top: 2em;
+        }
+
+        .links ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .links ul li {
+            margin-left: 1.39em;
+        }
+
+        .links ul li:first-of-type {
+            margin-left: unset;
+        }
+
+        .links a {
+            font-size: 1.39em;
+        }
+
+        @media screen and (min-width: 991px) {
+            .about h1 {
+                font-size: 2.25em;
+            }
+
+            .about h2 {
+                font-size: 1.39em;
+            }
+
+            .about h3 {
+                font-size: 1em;
+            }
+
+            .profile-img {
+                height: 7em;
+            }
+
+            .links a {
+                font-size: 1em;
+            }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86968949-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-86968949-1');
+    </script>
+</head>
+<body>
+<main>
+    <div class="mati-wrap">
+        <img src="https://en.gravatar.com/userimage/26750328/7e9c98bf243f53091bbef1899b8c7583.jpeg?size=512"
+             class="profile-img" alt="Tien Mai">
+        <div class="about">
+            <h1>Yes, it's me - Tien Mai</h1>
+            <h2>A full-stack web developer</h2>
+            <h3>from Ho Chi Minh City (Saigon), Vietnam.</h3>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-globe fa-fw"></i>
+                    <a href="https://mati.plus/" target="_blank" title="MatiPlus">MatiPlus</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github fa-fw"></i>
+                    <a href="https://github.com/matidev" target="_blank" title="MatiDev on GitHub">/MatiDev</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter fa-fw"></i>
+                    <a href="https://twitter.com/MatiDev" target="_blank" title="MatiDev on Twitter">/MatiDev</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+</body>
+</html>
