@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Tien Mai | Mati</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 300;
             background: #f5f6f7;
         }
@@ -34,7 +36,7 @@
         }
 
         .profile-img {
-            height: 14em;
+            height: 9em;
             border-radius: 50%;
             border-top: 3px solid #b10079;
             border-left: 3px solid #0073b1;
@@ -49,7 +51,7 @@
         .about h1 {
             margin-bottom: 0.68em;
             font-weight: 400;
-            font-size: 3em;
+            font-size: 1.68em;
         }
 
         .about h1 span {
@@ -57,15 +59,16 @@
         }
 
         .about h2 {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.25em;
             font-weight: 300;
-            font-size: 2em;
+            font-size: 1.25em;
             text-transform: uppercase;
         }
 
         .about h3 {
+            margin-top: 0;
+            font-size: 1em;
             font-weight: 300;
-            font-size: 1.39em;
         }
 
         .links {
@@ -76,11 +79,16 @@
             list-style: none;
             display: flex;
             padding: 0;
+            margin-top: 0;
             justify-content: center;
         }
 
+        .links ul:first-of-type {
+            margin-bottom: 0.68em;
+        }
+
         .links ul li {
-            margin-left: 1.39em;
+            margin-left: 1em;
         }
 
         .links ul li:first-of-type {
@@ -88,10 +96,18 @@
         }
 
         .links a {
-            font-size: 1.39em;
+            font-size: 1em;
         }
 
         @media screen and (min-width: 991px) {
+            body {
+                font-size: 18px;
+            }
+
+            .profile-img {
+                height: 7em;
+            }
+
             .about h1 {
                 font-size: 2.25em;
             }
@@ -102,10 +118,6 @@
 
             .about h3 {
                 font-size: 1em;
-            }
-
-            .profile-img {
-                height: 7em;
             }
 
             .links a {
@@ -137,17 +149,21 @@
         </div>
         <div class="links">
             <ul>
-                <li>
-                    <i class="fa-solid fa-globe fa-fw"></i>
-                    <a href="https://mati.plus/" target="_blank" title="MatiPlus">MatiPlus</a>
-                </li>
+                <li><a href="https://mati.vn/" title="Mati.VN">mati.vn</a></li>
+                <li><a href="https://mati.plus/" target="_blank" title="Mati.Plus">mati.plus</a></li>
+            </ul>
+            <ul>
                 <li>
                     <i class="fa-brands fa-github fa-fw"></i>
-                    <a href="https://github.com/matidev" target="_blank" title="MatiDev on GitHub">/MatiDev</a>
+                    <a href="https://github.com/matidev" target="_blank" title="GitHub">/matidev</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin fa-fw"></i>
+                    <a href="https://linkedin.com/in/matidev" target="_blank" title="LinkedIn">/matidev</a>
                 </li>
                 <li>
                     <i class="fa-brands fa-twitter fa-fw"></i>
-                    <a href="https://twitter.com/MatiDev" target="_blank" title="MatiDev on Twitter">/MatiDev</a>
+                    <a href="https://twitter.com/matidev" target="_blank" title="Twitter">/matidev</a>
                 </li>
             </ul>
         </div>
