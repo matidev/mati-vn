@@ -3,15 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta name="description" content="The official website of Tien Mai (Mati)">
-    <meta name="keywords" content="mati, matidev, matiplus, tien, mai, developer">
+    <meta name="description"
+          content="Check the status of popular camera ports by Tien Mai | Mati. Powered by MatiPlus API.">
+    <meta name="keywords" content="mati, matidev, matiplus, tien, mai, developer, cctv, camera, open ports">
     <meta name="author" content="Tien Mai (Mati)">
     <title>CCTV | Tien Mai | Mati</title>
     <link href="/favicon.png" rel="icon" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: #252525;
+            background: #f5f6f7;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #252525;
+        }
+
+        h1 {
+            margin-bottom: 0.68em;
+            font-weight: 400;
+            font-size: 1.68em;
+            color: #252525;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 1.39em;
+            color: #252525;
+        }
+
+        ul li {
+            margin-bottom: 9px;
+            list-style-type: circle;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86968949-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-86968949-1');
+    </script>
 </head>
 <body>
-Test page
+<h1>
+    <span>CCTV/Camera Support</span>
+    <span style="display: block; font-size: 14px; letter-spacing: 1px;">
+        Powered by <a href="https://mati.plus/?utm_source=mati.vn&utm_medium=cctv" target="_blank">MatiPlus API.</a>
+    </span>
+</h1>
+<h2>Your IP: <span data-your-ip>Getting...</span></h2>
+<div style="display: none" data-result>
+    <h2>Popular Ports Status:</h2>
+    <ul></ul>
+</div>
+<div style="margin-top: 25px;">2023 &copy; Tien Mai &bull; <a href="https://mati.vn">mati.vn</a></div>
+<script>
+    (function ($) {
+        'use strict';
+
+        let $yourIP = $('[data-your-ip]'),
+            $resultBlock = $('[data-result]'),
+            listOfPorts = [80, 443, 8000, 8080, 8081, 554, 34567, 7777, 21, 22, 25, 3306, 3389, 3399, 5900],
+            getPortStatus = function (token, ip, port) {
+                let $item = $('[data-port="' + port + '"]');
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://api.mati.plus/v1/pub/port',
+                    data: {ip: ip, port: port, token: token},
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.data.portStatus) {
+                            $item.html('<span style="font-weight: 500; color: darkgreen;">Opened</span>');
+                        } else {
+                            $item.html('<span style="color: #b10079;">Closed</span>');
+                        }
+                    },
+                    error: function () {
+                        $item.html('<span style="color: #b10079;">Error</span>');
+                    }
+                });
+            };
+
+        if ($yourIP.length) {
+            $.ajax({
+                type: 'POST',
+                url: 'https://api.mati.plus/v1/pub/ip',
+                dataType: 'json',
+                success: function (response) {
+                    $yourIP.html('<span style="font-weight: 500; color: #0073b1;">' + response.data.ipAddress + '</span>');
+                    if (response.data.ipAddress && response.data.token) {
+                        $resultBlock.fadeIn();
+
+                        listOfPorts.forEach(function (port) {
+                            $resultBlock.find('ul').append('<li><span style="font-weight: 500;">' + port + '</span> <span data-port-result data-port="' + port + '">Checking...</span></li>');
+                            getPortStatus(response.data.token, response.data.ipAddress, port);
+                        });
+                    }
+                },
+                error: function () {
+                    $yourIP.html('<span style="color: #b10079;">N/A</span>')
+                }
+            });
+        }
+    })(jQuery);
+</script>
 </body>
 </html>
