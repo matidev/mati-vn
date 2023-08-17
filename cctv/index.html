@@ -65,7 +65,8 @@
     </span>
 </h1>
 <h2>Your IP: <span data-your-ip>Getting...</span></h2>
-<div style="display: none" data-result>
+<div style="display: none;" data-ip-info></div>
+<div style="display: none;" data-result>
     <h2>Popular Ports Status:</h2>
     <ul></ul>
 </div>
@@ -75,6 +76,7 @@
         'use strict';
 
         let $yourIP = $('[data-your-ip]'),
+            $ipInfo = $('[data-ip-info]'),
             $resultBlock = $('[data-result]'),
             listOfPorts = [80, 443, 8000, 8080, 8081, 554, 34567, 7777, 21, 22, 25, 3306, 3389, 3399, 5900],
             getPortStatus = function (token, ip, port) {
@@ -105,6 +107,11 @@
                 dataType: 'json',
                 success: function (response) {
                     $yourIP.html('<span style="font-weight: 500; color: #0073b1;">' + response.data.ipAddress + '</span>');
+
+                    if (response.data.ipInfo) {
+                        $ipInfo.html('AS: ' + response.data.ipInfo.as).show();
+                    }
+
                     if (response.data.ipAddress && response.data.token) {
                         $resultBlock.fadeIn();
 
