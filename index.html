@@ -21,7 +21,7 @@
         a {
             text-decoration: none;
             font-weight: 400;
-            color: #0073b1;
+            color: #0079b5;
         }
 
         main {
@@ -46,18 +46,18 @@
             width: 9em;
             height: 9em;
             border-radius: 50%;
-            border-top: 4px solid #b10079;
-            border-left: 4px solid #0073b1;
-            border-bottom: 4px solid #0073b1;
-            border-right: 4px solid #b10079;
+            border-top: 4px solid #b50079;
+            border-left: 4px solid #0079b5;
+            border-bottom: 4px solid #0079b5;
+            border-right: 4px solid #b50079;
             cursor: pointer;
         }
 
         .profile-img:hover {
-            border-top: 4px solid #0073b1;
-            border-left: 4px solid #b10079;
-            border-bottom: 4px solid #b10079;
-            border-right: 4px solid #0073b1;
+            border-top: 4px solid #0079b5;
+            border-left: 4px solid #b50079;
+            border-bottom: 4px solid #b50079;
+            border-right: 4px solid #0079b5;
         }
 
         .about {
@@ -91,6 +91,10 @@
             margin-top: 2em;
         }
 
+        .links .fa-fw {
+            color: #686868;
+        }
+
         .links ul {
             list-style: none;
             display: flex;
@@ -105,6 +109,14 @@
 
         .links ul li {
             margin-left: 1em;
+        }
+
+        .links ul li:hover .fa-fw {
+            color: #252525;
+        }
+
+        .links ul li.small {
+            font-size: .868em;
         }
 
         .links ul li:first-of-type {
@@ -165,6 +177,14 @@
             <h1>Yes, it's me - Tien Mai</h1>
             <h2>A full-stack web developer</h2>
             <h3>from Ho Chi Minh City (Saigon), Vietnam.</h3>
+        </div>
+        <div class="links">
+            <ul>
+                <li class="small">
+                    <i class="fa-solid fa-shield fa-fw"></i>
+                    <a href="/cctv" target="_blank">CCTV Support</a>
+                </li>
+            </ul>
         </div>
         <div class="links">
             <ul>

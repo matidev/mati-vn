@@ -78,7 +78,7 @@
         let $yourIP = $('[data-your-ip]'),
             $ipInfo = $('[data-ip-info]'),
             $resultBlock = $('[data-result]'),
-            listOfPorts = [80, 443, 8000, 8080, 8081, 554, 34567, 7777, 21, 22, 25, 3306, 3389, 3399, 5900],
+            listOfPorts = [80, 443, 8000, 8080, 8081, 554, 34567, 7777, 21, 22, 25, 3306, 3389, 3399, 5900, 1194],
             getPortStatus = function (token, ip, port) {
                 let $item = $('[data-port="' + port + '"]');
 
@@ -91,11 +91,11 @@
                         if (response.data.portStatus) {
                             $item.html('<span style="font-weight: 500; color: darkgreen;">Opened</span>');
                         } else {
-                            $item.html('<span style="color: #b10079;">Closed</span>');
+                            $item.html('<span style="color: #b50079;">Closed</span>');
                         }
                     },
                     error: function () {
-                        $item.html('<span style="color: #b10079;">Error</span>');
+                        $item.html('<span style="color: #b50079;">Error</span>');
                     }
                 });
             };
@@ -106,7 +106,7 @@
                 url: 'https://api.mati.plus/v1/pub/ip',
                 dataType: 'json',
                 success: function (response) {
-                    $yourIP.html('<span style="font-weight: 500; color: #0073b1;">' + response.data.ipAddress + '</span>');
+                    $yourIP.html('<span style="font-weight: 500; color: #0079b5;">' + response.data.ipAddress + '</span>');
 
                     if (response.data.ipInfo) {
                         $ipInfo.html('AS: ' + response.data.ipInfo.as).show();
@@ -122,7 +122,7 @@
                     }
                 },
                 error: function () {
-                    $yourIP.html('<span style="color: #b10079;">N/A</span>')
+                    $yourIP.html('<span style="color: #b50079;">N/A</span>')
                 }
             });
         }
