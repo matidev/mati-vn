@@ -114,7 +114,7 @@
                     $yourIP.html('<span style="font-weight: 500; color: #0079b5;">' + response.data.ipAddress + '</span>');
 
                     if (response.data.ipInfo) {
-                        $ipInfo.html('AS: ' + response.data.ipInfo.as).show();
+                        $ipInfo.html(response.data.ipInfo.as).show();
                     }
 
                     if (response.data.ipAddress && response.data.token) {
