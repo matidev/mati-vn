@@ -6,16 +6,7 @@
     <meta name="description"
           content="Check the status of popular camera ports by Tien Mai | Mati. Powered by MatiPlus API.">
     <meta name="keywords" content="mati, matidev, matiplus, tien, mai, developer, cctv, camera, open ports">
-    <meta name="author" content="Tien Mai (Mati)">
-    <title>CCTV | Tien Mai | Mati</title>
-    <link href="/favicon.png" rel="icon" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://api.mati.plus">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    {% include header.html %}
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -50,17 +41,7 @@
             list-style-type: circle;
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQWJCWP40N"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'G-HQWJCWP40N');
-    </script>
+    {% include analytics.html %}
 </head>
 <body>
 <h1>
@@ -76,6 +57,7 @@
     <ul></ul>
 </div>
 <div style="margin-top: 25px;">2023 &copy; Tien Mai &bull; <a href="https://mati.vn">mati.vn</a></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script>
     (function ($) {
         'use strict';

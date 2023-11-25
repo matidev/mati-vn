@@ -1,0 +1,168 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: #f5f6f7;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #0079b5;
+}
+
+main {
+    position: relative;
+    height: 96vh;
+    text-align: center;
+}
+
+.mati-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.mati-plus {
+    font-weight: 600;
+}
+
+.profile-img {
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    border-top: 4px solid #b50079;
+    border-left: 4px solid #0079b5;
+    border-bottom: 4px solid #0079b5;
+    border-right: 4px solid #b50079;
+    cursor: pointer;
+}
+
+.profile-img:hover {
+    border-top: 4px solid #0079b5;
+    border-left: 4px solid #b50079;
+    border-bottom: 4px solid #b50079;
+    border-right: 4px solid #0079b5;
+}
+
+.about {
+    margin-top: 1.39em;
+}
+
+.about h1 {
+    margin-bottom: 0.125em;
+    font-weight: 400;
+    font-size: 1.68em;
+}
+
+.about .nickname {
+    margin-bottom: 0.79em;
+}
+
+.about .nickname span {
+    font-weight: 500;
+}
+
+.about h1 span {
+    opacity: 0.79;
+}
+
+.about h2 {
+    margin-bottom: 0.25em;
+    font-weight: 300;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.about h3 {
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.error {
+    margin-top: 1.39em;
+    margin-bottom: 1.79em;
+}
+
+.error div {
+    display: inline-block;
+    padding: 0.68em 1em;
+    font-size: 1em;
+    color: #155724;
+    background-color: #d4edda;
+    border-radius: 0.5em;
+}
+
+.links {
+    margin-top: 2em;
+}
+
+.links .fa-fw {
+    color: #686868;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.links ul:first-of-type {
+    margin-bottom: 0.68em;
+}
+
+.links ul li {
+    margin-left: 1em;
+}
+
+.links ul li:hover .fa-fw {
+    color: #252525;
+}
+
+.links ul li.small {
+    font-size: .868em;
+}
+
+.links ul li:first-of-type {
+    margin-left: unset;
+}
+
+.links a {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 991px) {
+    body {
+        font-size: 18px;
+    }
+
+    .profile-img {
+        width: 7em;
+        height: 7em;
+    }
+
+    .about h1 {
+        font-size: 2.25em;
+    }
+
+    .about h2 {
+        font-size: 1.39em;
+    }
+
+    .about h3 {
+        font-size: 1em;
+    }
+
+    .error div {
+        padding: 0.79em 1.25em;
+    }
+
+    .links a {
+        font-size: 1em;
+    }
+}

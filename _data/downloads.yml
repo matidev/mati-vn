@@ -1,0 +1,124 @@
+- name: Windows 10
+  windows: https://www.microsoft.com/en-us/software-download/windows10ISO/
+  linux:
+  macos:
+
+- name: Ubuntu Desktop
+  windows:
+  linux: https://www.ubuntu.com/download/desktop
+  macos:
+
+- name: Ubuntu Releases
+  windows:
+  linux: https://mirror.bizflycloud.vn/ubuntu-releases/
+  macos:
+
+- name: Oracle VM VirtualBox
+  windows: https://www.virtualbox.org/wiki/Downloads
+  linux: https://www.virtualbox.org/wiki/Linux_Downloads
+  macos: https://www.virtualbox.org/wiki/Downloads
+
+- name: Ultimate Windows Tweaker 4
+  windows: https://www.thewindowsclub.com/downloads/UWT4.zip
+  linux:
+  macos:
+
+- name: Ultimate Windows Tweaker 5
+  windows: https://www.thewindowsclub.com/downloads/UWT5.zip
+  linux:
+  macos:
+
+- name: AdwCleaner
+  windows: https://toolslib.net/downloads/finish/1-adwcleaner/
+  linux:
+  macos:
+
+- name: JetBrains
+  windows: https://www.jetbrains.com/
+  linux: https://www.jetbrains.com/
+  macos: https://www.jetbrains.com/
+
+- name: Sublime Text
+  windows: https://www.sublimetext.com/download
+  linux: https://www.sublimetext.com/download
+  macos: https://www.sublimetext.com/download
+
+- name: Notepad++
+  windows: https://notepad-plus-plus.org/downloads/
+  linux:
+  macos:
+
+- name: Google Chrome
+  windows: https://www.google.com/chrome/
+  linux: https://www.google.com/chrome/
+  macos: https://www.google.com/chrome/
+
+- name: Bitvise SSH Client
+  windows: https://www.bitvise.com/ssh-client-download
+  linux:
+  macos:
+
+- name: FileZilla
+  windows: https://filezilla-project.org/download.php?type=client
+  linux: https://filezilla-project.org/download.php?type=client
+  macos: https://filezilla-project.org/download.php?platform=osx
+
+- name: TeamViewer
+  windows: https://www.teamviewer.com/en/download/windows/
+  linux: https://www.teamviewer.com/en/download/linux/
+  macos: https://www.teamviewer.com/en/download/mac/
+
+- name: UltraViewer
+  windows: https://ultraviewer.net/en/download.html
+  linux:
+  macos:
+
+- name: Ferdi
+  windows: https://getferdi.com/download/
+  linux: https://getferdi.com/download/
+  macos: https://getferdi.com/download/
+
+- name: Skype
+  windows: https://go.skype.com/windows.desktop.download
+  linux: https://go.skype.com/skypeforlinux-64.deb
+  macos: https://go.skype.com/mac.download
+
+- name: Zalo
+  windows: https://zalo.me/pc
+  linux: https://zalo.me/zalo-chat
+  macos: https://zalo.me/pc
+
+- name: Telegram
+  windows: https://desktop.telegram.org/
+  linux: https://desktop.telegram.org/
+  macos: https://macos.telegram.org/
+
+- name: K-Lite Codec Pack
+  windows: https://www.codecguide.com/download_k-lite_codec_pack_full.htm
+  linux:
+  macos:
+
+- name: Rufus
+  windows: https://rufus.ie/
+  linux:
+  macos:
+
+- name: EaseUS Partition Master Free
+  windows: https://download3.easeus.com/free/epm.exe
+  linux:
+  macos:
+
+- name: WinRAR 6
+  windows: https://drive.google.com/uc?id=15qRuOdtq1UXZcuP1LOifGxBEwNQ6-_YR&export=download
+  linux:
+  macos:
+
+- name: UniKey
+  windows: https://www.unikey.org/download.html
+  linux:
+  macos:
+
+- name: Mati's Fonts Collection
+  windows: https://drive.google.com/uc?export=download&confirm=mWEx&id=10UeUDQY484kNkukUWeNGM4YlowI2biZp
+  linux:
+  macos:
