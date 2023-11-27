@@ -1,0 +1,68 @@
+---
+layout: default
+permalink: /am-lich
+title: Âm Lịch
+styles:
+- https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css
+scripts:
+- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+- https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js
+- assets/js/amlich-aa98.js
+- assets/js/ics.deps.min.js
+- assets/js/mati-vn-amlich.min.js
+---
+<div class="container py-5">
+    <div class="row justify-content-md-center">
+        <div class="col">
+            <h1 class="title">{{ page.title }}</h1>
+            <div class="alert alert-success font-size-normal">
+                Hôm nay là <span id="mati-al-today-solar" class="font-weight-bold"></span>,
+                nhằm ngày <span id="mati-al-today-lunar" class="font-weight-bold"></span> Âm Lịch.
+            </div>
+            <hr>
+            <div class="mb-4 small">
+                <div class="alert alert-info">
+                    <p>Các ứng dụng lịch như Apple Calendar (iPhone, iPad...), Google Calendar, Microsoft Tasks... chỉ
+                        hỗ trợ ngày dương lịch. Công cụ này sẽ hỗ trợ tạo/chuyển đổi lịch âm sang dương, sau đó nhập
+                        (import) vào các ứng dụng trên.</p>
+                    <p class="pb-0 mb-0">Sự kiện sẽ được tạo lặp lại trong vòng 25 năm và nhắc nhở (alarm) lúc 8:00 sáng
+                        ngày sự kiện diễn
+                        ra.</p>
+                </div>
+            </div>
+            <form id="mati-amlich" class="amlich">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                        <tr>
+                            <th scope="col" class="font-weight-normal small text-center"></th>
+                            <th scope="col" class="font-weight-normal small text-center">Sự kiện</th>
+                            <th scope="col" class="font-weight-normal small text-center">Ngày</th>
+                            <th scope="col" class="font-weight-normal small text-center">Ngày Âm?</th>
+                            <th scope="col" class="font-weight-normal small text-center"></th>
+                        </tr>
+                        </thead>
+                        <tbody id="mati-al-events"></tbody>
+                    </table>
+                </div>
+                <div class="mt-3 text-center text-md-right">
+                    <button type="button" id="mati-al-newline" class="btn btn-info btn-sm">
+                        <i class="fa-solid fa-calendar-plus"></i> Thêm dòng
+                    </button>
+                </div>
+                <div class="mt-5 text-center text-md-left">
+                    <button type="submit" id="mati-al-download" class="btn btn-success">
+                        <i class="fa-solid fa-download"></i> Xuất Lịch .ics
+                    </button>
+                    <div class="alert alert-info mt-2 small">
+                        Sử dụng file .ics này để nhập (import) vào ứng dụng lịch.
+                    </div>
+                </div>
+            </form>
+            <div class="pt-5 text-center">
+                <hr>
+                2023 &copy; Tien Mai &bull; <a href="/">mati.vn</a>
+            </div>
+        </div>
+    </div>
+</div>
