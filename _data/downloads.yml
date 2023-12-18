@@ -39,9 +39,9 @@
   macos: https://www.jetbrains.com/
 
 - name: Sublime Text
-  windows: https://www.sublimetext.com/download
-  linux: https://www.sublimetext.com/download
-  macos: https://www.sublimetext.com/download
+  windows: https://www.sublimetext.com/download_thanks?target=win-x64
+  linux: https://www.sublimetext.com/docs/linux_repositories.html
+  macos: https://www.sublimetext.com/download_thanks?target=mac
 
 - name: Notepad++
   windows: https://notepad-plus-plus.org/downloads/
@@ -73,11 +73,6 @@
   linux:
   macos:
 
-- name: Ferdi
-  windows: https://getferdi.com/download/
-  linux: https://getferdi.com/download/
-  macos: https://getferdi.com/download/
-
 - name: Skype
   windows: https://go.skype.com/windows.desktop.download
   linux: https://go.skype.com/skypeforlinux-64.deb
@@ -99,7 +94,7 @@
   macos:
 
 - name: Rufus
-  windows: https://rufus.ie/
+  windows: https://rufus.ie/en/
   linux:
   macos:
 
