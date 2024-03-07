@@ -40,6 +40,35 @@
             margin-bottom: 9px;
             list-style-type: circle;
         }
+
+        [data-result] ul {
+            max-width: 368px;
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                text-align: center;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            [data-your-ip] {
+                display: block;
+            }
+
+            [data-ip-info] {
+                text-align: center;
+            }
+
+            .copyright {
+                text-align: center;
+            }
+        }
     </style>
     {% include analytics.html %}
 </head>
@@ -56,65 +85,66 @@
     <h2>Popular Ports Status:</h2>
     <ul></ul>
 </div>
-<div style="margin-top: 25px;">2023 &copy; Tien Mai &bull; <a href="https://mati.vn">mati.vn</a></div>
+<div style="padding-top: 25px; margin-top: 25px;" class="copyright">2023 &copy; Tien Mai &bull; <a
+        href="https://mati.vn">mati.vn</a></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-    (function ($) {
-        'use strict';
+  (function ($) {
+    'use strict';
 
-        let matiPlusAPI = 'https://api.mati.plus/v1/pub',
-            $yourIP = $('[data-your-ip]'),
-            $ipInfo = $('[data-ip-info]'),
-            $resultBlock = $('[data-result]'),
-            listOfPorts = [80, 443, 8000, 8080, 8081, 554, 34567, 7777, 21, 22, 23, 25, 3306, 3389, 3399, 5900, 1194],
-            getPortStatus = function (token, ip, port) {
-                let $item = $('[data-port="' + port + '"]');
+    let matiPlusAPI = 'https://api.mati.plus/v1/pub',
+      $yourIP = $('[data-your-ip]'),
+      $ipInfo = $('[data-ip-info]'),
+      $resultBlock = $('[data-result]'),
+      listOfPorts = [80, 443, 8000, 8080, 8081, 554, 34567, 7777, 21, 22, 23, 25, 3306, 3389, 3399, 5900, 1194],
+      getPortStatus = function (token, ip, port) {
+        let $item = $('[data-port="' + port + '"]');
 
-                $.ajax({
-                    type: 'POST',
-                    url: matiPlusAPI + '/port',
-                    data: {ip: ip, port: port, token: token},
-                    dataType: 'json',
-                    success: function (response) {
-                        if (response.data.portStatus) {
-                            $item.html('<span style="font-weight: 500; color: darkgreen;">Opened</span>');
-                        } else {
-                            $item.html('<span style="color: #b50079;">Closed</span>');
-                        }
-                    },
-                    error: function () {
-                        $item.html('<span style="color: #b50079;">Error</span>');
-                    }
-                });
-            };
+        $.ajax({
+          type: 'POST',
+          url: matiPlusAPI + '/port',
+          data: {ip: ip, port: port, token: token},
+          dataType: 'json',
+          success: function (response) {
+            if (response.data.portStatus) {
+              $item.html('<span style="font-weight: 500; color: darkgreen;">Opened</span>');
+            } else {
+              $item.html('<span style="color: darkred;">Closed</span>');
+            }
+          },
+          error: function () {
+            $item.html('<span style="color: darkred;">Error</span>');
+          }
+        });
+      };
 
-        if ($yourIP.length) {
-            $.ajax({
-                type: 'POST',
-                url: matiPlusAPI + '/ip',
-                dataType: 'json',
-                success: function (response) {
-                    $yourIP.html('<span style="font-weight: 500; color: #0079b5;">' + response.data.ipAddress + '</span>');
+    if ($yourIP.length) {
+      $.ajax({
+        type: 'POST',
+        url: matiPlusAPI + '/ip',
+        dataType: 'json',
+        success: function (response) {
+          $yourIP.html('<span style="font-weight: 500; color: #0079b5;">' + response.data.ipAddress + '</span>');
 
-                    if (response.data.ipInfo) {
-                        $ipInfo.html(response.data.ipInfo.as).show();
-                    }
+          if (response.data.ipInfo) {
+            $ipInfo.html(response.data.ipInfo.as).show();
+          }
 
-                    if (response.data.ipAddress && response.data.token) {
-                        $resultBlock.fadeIn();
+          if (response.data.ipAddress && response.data.token) {
+            $resultBlock.fadeIn();
 
-                        listOfPorts.forEach(function (port) {
-                            $resultBlock.find('ul').append('<li><span style="font-weight: 500;">' + port + '</span> <span data-port-result data-port="' + port + '">Checking...</span></li>');
-                            getPortStatus(response.data.token, response.data.ipAddress, port);
-                        });
-                    }
-                },
-                error: function () {
-                    $yourIP.html('<span style="color: #b50079;">N/A</span>')
-                }
+            listOfPorts.forEach(function (port) {
+              $resultBlock.find('ul').append('<li><span style="font-weight: 500;">' + port + '</span> <span data-port-result data-port="' + port + '"><span style="color: #686868;">Checking...</span></span></li>');
+              getPortStatus(response.data.token, response.data.ipAddress, port);
             });
+          }
+        },
+        error: function () {
+          $yourIP.html('<span style="color: darkred;">N/A</span>')
         }
-    })(jQuery);
+      });
+    }
+  })(jQuery);
 </script>
 </body>
 </html>
