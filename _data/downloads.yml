@@ -1,119 +1,119 @@
 - name: Windows 10
-  windows: 14r32MqkwE
+  windows: https://www.microsoft.com/en-us/software-download/windows10ISO/
   linux:
   macos:
 
 - name: Ubuntu Desktop
   windows:
-  linux: P6pAjk51rk
+  linux: https://www.ubuntu.com/download/desktop
   macos:
 
 - name: Ubuntu Releases
   windows:
-  linux: a1o3OW1xQW
+  linux: https://mirror.bizflycloud.vn/ubuntu-releases/
   macos:
 
 - name: Oracle VM VirtualBox
-  windows: zbWej3apqw
-  linux: 8Q8O21Pa2k
-  macos: zbWej3apqw
+  windows: https://www.virtualbox.org/wiki/Downloads
+  linux: https://www.virtualbox.org/wiki/Linux_Downloads
+  macos: https://www.virtualbox.org/wiki/Downloads
 
 - name: Ultimate Windows Tweaker 4
-  windows: zbWej3049A
+  windows: https://www.thewindowsclub.com/downloads/UWT4.zip
   linux:
   macos:
 
 - name: Ultimate Windows Tweaker 5
-  windows: RePABMxbR6
+  windows: https://www.thewindowsclub.com/downloads/UWT5.zip
   linux:
   macos:
 
 - name: AdwCleaner
-  windows: pP2pE70272
+  windows: https://toolslib.net/downloads/finish/1-adwcleaner/
   linux:
   macos:
 
 - name: JetBrains
-  windows: P6pAjJWD88
-  linux: P6pAjJWD88
-  macos: P6pAjJWD88
+  windows: https://www.jetbrains.com/
+  linux: https://www.jetbrains.com/
+  macos: https://www.jetbrains.com/
 
 - name: Sublime Text
-  windows: M6JAKZqNak
-  linux: JWNAmkDraw
-  macos: kmjNpwN4JN
+  windows: https://www.sublimetext.com/download_thanks?target=win-x64
+  linux: https://www.sublimetext.com/docs/linux_repositories.html
+  macos: https://www.sublimetext.com/download_thanks?target=mac
 
 - name: Notepad++
-  windows: NQNAxyd2j0
+  windows: https://notepad-plus-plus.org/downloads/
   linux:
   macos:
 
 - name: Google Chrome
-  windows: bAyKgpkRjE
-  linux: bAyKgpkRjE
-  macos: bAyKgpkRjE
+  windows: https://www.google.com/chrome/
+  linux: https://www.google.com/chrome/
+  macos: https://www.google.com/chrome/
 
 - name: Bitvise SSH Client
-  windows: 2wLK2BkkA2
+  windows: https://www.bitvise.com/ssh-client-download
   linux:
   macos:
 
 - name: FileZilla
-  windows: B4QVP0EzJe
-  linux: B4QVP0EzJe
-  macos: 34yx2ORAar
+  windows: https://filezilla-project.org/download.php?type=client
+  linux: https://filezilla-project.org/download.php?type=client
+  macos: https://filezilla-project.org/download.php?platform=osx
 
 - name: TeamViewer
-  windows: B4QVP0aOme
-  linux: pP2pE7m2QD
-  macos: VaKANzjoA3
+  windows: https://www.teamviewer.com/en/download/windows/
+  linux: https://www.teamviewer.com/en/download/linux/
+  macos: https://www.teamviewer.com/en/download/mac/
 
 - name: UltraViewer
-  windows: AxkDwLp8MQ
+  windows: https://ultraviewer.net/en/download.html
   linux:
   macos:
 
 - name: Skype
-  windows: jEzdpXXkXb
-  linux: ojNW499RKq
-  macos: DAQ4Dw8Eo7
+  windows: https://go.skype.com/windows.desktop.download
+  linux: https://go.skype.com/skypeforlinux-64.deb
+  macos: https://go.skype.com/mac.download
 
 - name: Zalo
-  windows: VaKANz5J3o
-  linux: bAyKgp054A
-  macos: VaKANz5J3o
+  windows: https://zalo.me/pc
+  linux: https://zalo.me/zalo-chat
+  macos: https://zalo.me/pc
 
 - name: Telegram
-  windows: kmjNpy6a5q
-  linux: kmjNpy6a5q
-  macos: rqkV5KqV9P
+  windows: https://desktop.telegram.org/
+  linux: https://desktop.telegram.org/
+  macos: https://macos.telegram.org/
 
 - name: K-Lite Codec Pack
-  windows: gN3BEk5zZ5
+  windows: https://www.codecguide.com/download_k-lite_codec_pack_full.htm
   linux:
   macos:
 
 - name: Rufus
-  windows: 9B6g2wye2Z
+  windows: https://rufus.ie/en/
   linux:
   macos:
 
 - name: EaseUS Partition Master Free
-  windows: OLJAzBZqjq
+  windows: https://download3.easeus.com/free/epm.exe
   linux:
   macos:
 
 - name: WinRAR 6
-  windows: WwxAbWRXDW
+  windows: https://drive.google.com/uc?id=15qRuOdtq1UXZcuP1LOifGxBEwNQ6-_YR&export=download
   linux:
   macos:
 
 - name: UniKey
-  windows: EByPDJ6ryk
+  windows: https://www.unikey.org/download.html
   linux:
   macos:
 
 - name: Mati's Fonts Collection
-  windows: qxNDP3RV7r
+  windows: https://drive.google.com/uc?export=download&confirm=mWEx&id=10UeUDQY484kNkukUWeNGM4YlowI2biZp
   linux:
   macos:

@@ -2,14 +2,13 @@
 title: Downloads
 permalink: /downloads
 layout: default
-mati_links: https://links.mati.vn/
 styles:
 - https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css
 ---
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col col-lg-8">
-            <h1 class="my-3 text-center text-xl-start">Mati's Downloads</h1>
+            <h1 class="my-3">Mati's Downloads</h1>
             <div class="table-responsive bg-white mb-4">
                 <table class="table table-striped table-hover mb-0">
                     <thead>
@@ -38,8 +37,7 @@ styles:
                         </td>
                         <td class="text-center align-middle">
                             {% if item.windows %}
-                            <a data-placement="top" data-toggle="tooltip"
-                               href="{{ page.mati_links | append: item.windows }}"
+                            <a data-placement="top" data-toggle="tooltip" href="{{ item.windows }}"
                                target="_blank" title="Redirect to download page for Windows">
                                 <i class="fa-solid fa-fw fa-up-right-from-square"></i>
                             </a>
@@ -47,8 +45,7 @@ styles:
                         </td>
                         <td class="text-center align-middle">
                             {% if item.linux %}
-                            <a data-placement="top" data-toggle="tooltip"
-                               href="{{ page.mati_links | append: item.linux }}"
+                            <a data-placement="top" data-toggle="tooltip" href="{{ item.linux }}"
                                target="_blank" title="Redirect to download page for Linux">
                                 <i class="fa-solid fa-fw fa-up-right-from-square"></i>
                             </a>
@@ -56,8 +53,7 @@ styles:
                         </td>
                         <td class="text-center align-middle">
                             {% if item.macos %}
-                            <a data-placement="top" data-toggle="tooltip"
-                               href="{{ page.mati_links | append: item.macos }}"
+                            <a data-placement="top" data-toggle="tooltip" href="{{ item.macos }}"
                                target="_blank" title="Redirect to download page for MacOS">
                                 <i class="fa-solid fa-fw fa-up-right-from-square"></i>
                             </a>
