@@ -13,5 +13,4 @@ https://mati.vn
 
 ### Commands
 
-- `bundle install`
-- `bundle exec jekyll serve`
+- To build and serve the site locally, just run `make`

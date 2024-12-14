@@ -96,8 +96,25 @@ main {
     border-radius: 0.5em;
 }
 
+.open-job {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.open-job p {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: darkgreen;
+}
+
+.open-job p:last-of-type {
+    margin-top: 0.5em;
+}
+
 .links {
-    margin-top: 2em;
+    /*margin-top: 2em;*/
 }
 
 .links .fa-fw {
