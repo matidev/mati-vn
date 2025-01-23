@@ -3,6 +3,11 @@
   linux:
   macos:
 
+- name: Windows 11
+  windows: https://www.microsoft.com/en-us/software-download/windows11
+  linux:
+  macos:
+
 - name: Ubuntu Desktop
   windows:
   linux: https://www.ubuntu.com/download/desktop
@@ -18,12 +23,12 @@
   linux: https://www.virtualbox.org/wiki/Linux_Downloads
   macos: https://www.virtualbox.org/wiki/Downloads
 
-- name: Ultimate Windows Tweaker 4
+- name: Ultimate Windows Tweaker 4 for Windows 10
   windows: https://www.thewindowsclub.com/downloads/UWT4.zip
   linux:
   macos:
 
-- name: Ultimate Windows Tweaker 5
+- name: Ultimate Windows Tweaker 5 for Windows 11
   windows: https://www.thewindowsclub.com/downloads/UWT5.zip
   linux:
   macos:
@@ -54,7 +59,7 @@
   macos: https://www.google.com/chrome/
 
 - name: Bitvise SSH Client
-  windows: https://www.bitvise.com/ssh-client-download
+  windows: https://bitvise.com/ssh-client-download
   linux:
   macos:
 
@@ -69,7 +74,7 @@
   macos: https://www.teamviewer.com/en/download/mac/
 
 - name: UltraViewer
-  windows: https://ultraviewer.net/en/download.html
+  windows: https://www.ultraviewer.net/en/download.html
   linux:
   macos:
 
